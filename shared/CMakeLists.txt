@@ -3,6 +3,7 @@
 add_library(shared STATIC
     src/World.cpp
     src/entities/Hero.cpp
+    src/entities/Projectile.cpp
 )
 
 target_include_directories(shared PUBLIC include)

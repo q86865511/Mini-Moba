@@ -1,6 +1,7 @@
 #pragma once
 #include "shared/Vec2.h"
 #include "shared/Team.h"
+#include <string>
 
 namespace shared {
 
@@ -26,11 +27,22 @@ public:
     float maxHp = 100.0f;
     bool  alive = true;
 
+    // Combat (used from phase 3 on).
+    float attackDamage   = 0.0f;
+    float attackRange    = 0.0f;
+    float attackCooldown = 1.0f;
+    float attackTimer    = 0.0f; // counts down to next allowed attack
+
+    // Presentation hints, read by the client. These are plain data (no raylib),
+    // so `shared` stays free of any rendering dependency.
+    std::string visualKey;       // which sprite sheet the client should use
+    bool        moving = false;  // drives move/idle animation
+    float       attackAnimTime = 0.0f; // >0 => client plays the attack animation
+    float       hurtAnimTime = 0.0f;   // >0 => client plays the hurt animation
+
     virtual ~Entity() = default;
 
     virtual EntityType Type() const = 0;
-
-    // Advance this entity by one fixed step. Default: do nothing.
     virtual void Update(World& world, float dt) {}
 
     bool IsEnemyOf(const Entity& other) const {

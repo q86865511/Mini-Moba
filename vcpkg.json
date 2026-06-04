@@ -2,5 +2,7 @@
   "name": "mini-moba",
   "version": "0.1.0",
   "description": "Simplified LoL-like MOBA (native C++).",
-  "dependencies": []
+  "dependencies": [
+    "nlohmann-json"
+  ]
 }

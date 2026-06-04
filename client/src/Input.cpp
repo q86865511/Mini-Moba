@@ -2,14 +2,19 @@
 #include "GameCamera.h"
 #include "raylib.h"
 
-bool Input::Process(shared::Hero* hero, const GameCamera& camera) {
-    if (!hero) return false;
+InputCommand Input::Process(shared::Hero* hero, const GameCamera& camera) {
+    InputCommand cmd;
+    if (!hero) return cmd;
 
-    // Hold/click the RIGHT mouse button to walk toward the cursor (LoL style).
-    if (IsMouseButtonDown(MOUSE_BUTTON_RIGHT)) {
-        const Vector2 w = camera.ScreenToWorld(GetMousePosition());
-        hero->SetMoveTarget({ w.x, w.y });
-    }
+    const Vector2 w = camera.ScreenToWorld(GetMousePosition());
+    cmd.worldMouse = { w.x, w.y };
 
-    return IsMouseButtonPressed(MOUSE_BUTTON_RIGHT); // fresh click -> move cue
+    // Hold/click RIGHT mouse to walk toward the cursor.
+    if (IsMouseButtonDown(MOUSE_BUTTON_RIGHT)) hero->SetMoveTarget(cmd.worldMouse);
+    if (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)) cmd.moved = true;
+
+    // Q: cast the ability toward the cursor.
+    if (IsKeyPressed(KEY_Q)) cmd.castQ = true;
+
+    return cmd;
 }

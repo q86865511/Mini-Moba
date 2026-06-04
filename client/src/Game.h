@@ -4,9 +4,10 @@
 #include "AssetManager.h"
 #include "GameCamera.h"
 #include "Renderer.h"
+#include "EntityView.h"
+#include "Effects.h"
 #include "Input.h"
 #include "Audio.h"
-#include "AnimatedSprite.h"
 
 // Top-level application object: owns the world and all client modules, and runs
 // the fixed-timestep game loop. main() just creates one and calls Run().
@@ -19,18 +20,19 @@ public:
 private:
     static constexpr int   kScreenW = 1280;
     static constexpr int   kScreenH = 720;
-    static constexpr float kWorldW  = 2048.0f; // matches the three-lane map size
+    static constexpr float kWorldW  = 2048.0f;
     static constexpr float kWorldH  = 2048.0f;
 
     shared::World world_;
     shared::Hero* hero_ = nullptr;
 
-    AssetManager   assets_;
-    GameCamera     camera_{ kScreenW, kScreenH };
-    Renderer       renderer_{ kScreenW, kScreenH, kWorldW, kWorldH };
-    Input          input_;
-    Audio          audio_;
-    AnimatedSprite heroAnim_;
+    AssetManager assets_;
+    GameCamera   camera_{ kScreenW, kScreenH };
+    Renderer     renderer_{ kScreenW, kScreenH, kWorldW, kWorldH };
+    ViewRegistry views_;
+    Effects      effects_;
+    Input        input_;
+    Audio        audio_;
 
     float accumulator_ = 0.0f;
 };

@@ -5,23 +5,31 @@
 
 namespace shared {
 
-// Fixed simulation timestep. The sim advances in discrete steps of this size,
-// which keeps movement deterministic and transfers cleanly to a server later.
+// Fixed simulation timestep.
 constexpr float kFixedDt = 1.0f / 60.0f;
+
+// A combat hit, surfaced to the client for floating numbers / sound.
+struct HitEvent { Vec2 pos; float amount; };
 
 // Owns every entity and advances the whole simulation. Pure logic: no raylib.
 class World {
 public:
     std::vector<std::unique_ptr<Entity>> entities;
 
-    // Takes ownership, assigns a unique id, returns a non-owning pointer.
+    // Combat feedback produced this tick; the client reads and clears it.
+    std::vector<HitEvent> hitEvents;
+
     Entity* Spawn(std::unique_ptr<Entity> e);
+    void    Tick(float dt);
 
-    // Advance the whole simulation by one fixed step.
-    void Tick(float dt);
-
-    // Nearest living enemy of `self` within range, or nullptr.
     Entity* FindNearestEnemy(const Entity& self, float maxRange) const;
+
+    // Apply damage (handles death + records a HitEvent).
+    void DealDamage(Entity& target, float dmg);
+
+    // Spawn a straight-line projectile owned by `ownerId` on `team`.
+    void SpawnProjectile(Vec2 pos, Vec2 dir, float speed, float dmg, Team team,
+                         int ownerId, float maxDist);
 
 private:
     int nextId_ = 1;

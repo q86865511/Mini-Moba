@@ -2,12 +2,13 @@
 #include "raylib.h"
 #include "shared/World.h"
 #include "shared/entities/Hero.h"
+#include "EntityView.h"
+#include "Effects.h"
 
 class AssetManager;
 class GameCamera;
 
-// Draws the world (map + entities) and a minimal HUD. Knows about raylib;
-// the simulation (shared) never does.
+// Draws the world (map + entities + health bars), effects, and a minimal HUD.
 class Renderer {
 public:
     Renderer(int screenWidth, int screenHeight, float worldWidth, float worldHeight)
@@ -15,11 +16,12 @@ public:
           worldW_(worldWidth), worldH_(worldHeight) {}
 
     void Draw(const shared::World& world, const AssetManager& assets,
-              const GameCamera& camera, const shared::Hero* playerHero,
-              Rectangle heroFrame);
+              const ViewRegistry& views, const GameCamera& camera,
+              const shared::Hero* playerHero, const Effects& effects);
 
 private:
     void DrawGround(const AssetManager& assets);
+    void DrawEntity(const shared::Entity& e, const AssetManager& assets, const ViewRegistry& views);
 
     int   screenW_;
     int   screenH_;

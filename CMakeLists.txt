@@ -27,3 +27,7 @@ FetchContent_MakeAvailable(raylib)
 add_subdirectory(shared)       # pure simulation library (no raylib / no net)
 #   add_subdirectory(server)   # phase 2: authoritative server (ENet)
 add_subdirectory(client)
+
+# Headless logic tests for the shared simulation.
+add_executable(combat_test tests/combat_test.cpp)
+target_link_libraries(combat_test PRIVATE shared)

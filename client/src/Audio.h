@@ -1,19 +1,21 @@
 #pragma once
 #include "raylib.h"
 
-// Owns audio. Phase 2 generates everything procedurally (a move "blip" and a
-// gentle ambient pad), so there are no external audio files. Later phases can
-// swap in downloaded CC0 music/SFX behind this same interface.
+// Owns audio. Everything is generated procedurally (no external audio files).
 class Audio {
 public:
-    void Init();      // InitAudioDevice + generate sfx & ambient track
+    void Init();
     void Shutdown();
-    void Update();    // call every frame (loops the ambient track)
-    void PlayMove();  // a short cue when the player issues a move order
+    void Update();      // loops the ambient track
+    void PlayMove();
+    void PlayHit();
+    void PlayCast();
 
 private:
     bool  ready_ = false;
     Sound moveSfx_{};
+    Sound hitSfx_{};
+    Sound castSfx_{};
     Sound ambient_{};
     bool  ambientReady_ = false;
 };

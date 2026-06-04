@@ -3,21 +3,24 @@
 
 namespace shared {
 
-// A controllable champion. Phase 2: just moves toward a clicked target.
+// A controllable champion: moves, auto-attacks nearby enemies, and casts Q.
 class Hero : public Entity {
 public:
     Vec2  moveTarget{};
     bool  hasTarget = false;
-    float moveSpeed = 300.0f;       // sim units per second
-    Vec2  facing{ 1.0f, 0.0f };     // unit vector the hero is facing (for rendering/abilities)
+    float moveSpeed = 300.0f;
+    Vec2  facing{ 1.0f, 0.0f };
 
-    Hero();
+    float qCooldown = 3.0f;
+    float qTimer = 0.0f;
+
+    explicit Hero(const std::string& slug = "ember_vanguard");
 
     EntityType Type() const override { return EntityType::Hero; }
     void Update(World& world, float dt) override;
 
-    // The only player input in phase 2: "walk to this point".
     void SetMoveTarget(Vec2 target);
+    bool CastQ(World& world, Vec2 targetPos); // returns true if it fired
 };
 
 } // namespace shared
