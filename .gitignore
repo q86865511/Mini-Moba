@@ -7,8 +7,13 @@
 
 # Visual Studio / editor
 .vs/
+.vscode/
+.idea/
 *.user
 CMakeUserPresets.json
+
+# Logs / local scratch
+*.log
 
 # OS
 Thumbs.db
