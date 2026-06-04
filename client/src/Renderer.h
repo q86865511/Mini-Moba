@@ -5,6 +5,8 @@
 #include "EntityView.h"
 #include "Effects.h"
 #include "Shop.h"
+#include <vector>
+#include <string>
 
 class AssetManager;
 class GameCamera;
@@ -20,6 +22,9 @@ public:
               const ViewRegistry& views, const GameCamera& camera,
               const shared::Hero* playerHero, const Effects& effects,
               int matchResult, const Shop& shop);
+
+    void DrawMenu(const AssetManager& assets);
+    void DrawHeroSelect(const std::vector<std::string>& heroes, int selected, const AssetManager& assets);
 
 private:
     void DrawGround(const AssetManager& assets);

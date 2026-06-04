@@ -209,3 +209,62 @@ void Renderer::DrawShopPanel(const Shop& shop, const shared::Hero* h) {
         DrawText(items[i].desc.c_str(), px + 18, iy + 26, 16, Color{ 160, 200, 160, 255 });
     }
 }
+
+void Renderer::DrawMenu(const AssetManager& assets) {
+    BeginDrawing();
+    ClearBackground(Color{ 18, 20, 28, 255 });
+
+    const Texture2D map = assets.Map();
+    DrawTexturePro(map, { 0, 0, (float)map.width, (float)map.height },
+                   { 0, 0, (float)screenW_, (float)screenH_ }, Vector2{ 0, 0 }, 0.0f,
+                   Color{ 255, 255, 255, 55 });
+
+    const char* title = "MINI MOBA";
+    const int fs = 92;
+    DrawText(title, screenW_ / 2 - MeasureText(title, fs) / 2, 150, fs, RAYWHITE);
+
+    const char* s1 = "Press ENTER to play";
+    DrawText(s1, screenW_ / 2 - MeasureText(s1, 28) / 2, 380, 28, Color{ 120, 220, 150, 255 });
+    const char* s2 = "Press ESC to quit";
+    DrawText(s2, screenW_ / 2 - MeasureText(s2, 22) / 2, 426, 22, Color{ 200, 200, 210, 255 });
+
+    EndDrawing();
+}
+
+void Renderer::DrawHeroSelect(const std::vector<std::string>& heroes, int selected, const AssetManager& assets) {
+    BeginDrawing();
+    ClearBackground(Color{ 18, 20, 28, 255 });
+
+    const char* title = "SELECT YOUR HERO";
+    DrawText(title, screenW_ / 2 - MeasureText(title, 46) / 2, 48, 46, RAYWHITE);
+
+    const int n = (int)heroes.size();
+    const int cardW = 180, cardH = 230, gap = 22;
+    const int totalW = n * cardW + (n - 1) * gap;
+    const int startX = screenW_ / 2 - totalW / 2;
+    const int y = 190;
+
+    for (int i = 0; i < n; ++i) {
+        const int x = startX + i * (cardW + gap);
+        const bool sel = (i == selected);
+        DrawRectangle(x, y, cardW, cardH, sel ? Color{ 40, 60, 92, 255 } : Color{ 28, 32, 42, 255 });
+        DrawRectangleLines(x, y, cardW, cardH, sel ? Color{ 120, 200, 255, 255 } : Color{ 70, 80, 100, 255 });
+
+        const Texture2D sheet = assets.Sheet(heroes[i]);
+        const AnimationSet* set = assets.Anim(heroes[i]);
+        if (sheet.id != 0 && set) {
+            Rectangle fr = { 0, 0, 256, 256 };
+            if (set->Has("idle") && !set->states.at("idle").empty()) fr = set->states.at("idle")[0].src;
+            const float ds = 150.0f;
+            DrawTexturePro(sheet, fr, { (float)(x + cardW / 2), (float)(y + 130), ds, ds },
+                           { ds / 2.0f, ds * 0.78f }, 0.0f, WHITE);
+        }
+        const int nw = MeasureText(heroes[i].c_str(), 18);
+        DrawText(heroes[i].c_str(), x + cardW / 2 - nw / 2, y + cardH - 30, 18, RAYWHITE);
+    }
+
+    const char* hint = "LEFT / RIGHT to choose,   ENTER to start";
+    DrawText(hint, screenW_ / 2 - MeasureText(hint, 24) / 2, y + cardH + 46, 24, Color{ 120, 220, 150, 255 });
+
+    EndDrawing();
+}
