@@ -1,5 +1,5 @@
 #pragma once
-#include "shared/World.h"
+#include "shared/Match.h"
 #include "shared/entities/Hero.h"
 #include "AssetManager.h"
 #include "GameCamera.h"
@@ -9,7 +9,7 @@
 #include "Input.h"
 #include "Audio.h"
 
-// Top-level application object: owns the world and all client modules, and runs
+// Top-level application object: owns the match and all client modules, and runs
 // the fixed-timestep game loop. main() just creates one and calls Run().
 class Game {
 public:
@@ -23,7 +23,7 @@ private:
     static constexpr float kWorldW  = 2048.0f;
     static constexpr float kWorldH  = 2048.0f;
 
-    shared::World world_;
+    shared::Match match_;
     shared::Hero* hero_ = nullptr;
 
     AssetManager assets_;

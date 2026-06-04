@@ -22,6 +22,7 @@ public:
     int   id = 0;
     Team  team = Team::Neutral;
     Vec2  pos{};
+    Vec2  facing{ 1.0f, 0.0f };
     float radius = 16.0f;
     float hp = 100.0f;
     float maxHp = 100.0f;
@@ -39,6 +40,7 @@ public:
     bool        moving = false;  // drives move/idle animation
     float       attackAnimTime = 0.0f; // >0 => client plays the attack animation
     float       hurtAnimTime = 0.0f;   // >0 => client plays the hurt animation
+    float       deadTimer = 0.0f;      // time spent dead (for corpse cleanup)
 
     virtual ~Entity() = default;
 

@@ -9,7 +9,6 @@ public:
     Vec2  moveTarget{};
     bool  hasTarget = false;
     float moveSpeed = 300.0f;
-    Vec2  facing{ 1.0f, 0.0f };
 
     float qCooldown = 3.0f;
     float qTimer = 0.0f;

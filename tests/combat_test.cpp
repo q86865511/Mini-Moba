@@ -1,5 +1,6 @@
 // Headless unit tests for the shared combat simulation (no raylib needed).
 #include "shared/World.h"
+#include "shared/Match.h"
 #include "shared/entities/Hero.h"
 #include "shared/entities/Projectile.h"
 #include <cstdio>
@@ -56,6 +57,29 @@ int main() {
         w.SpawnProjectile({ 0, 0 }, { 1, 0 }, 800.0f, 40.0f, Team::Blue, 1, 200.0f);
         for (int i = 0; i < 120; ++i) w.Tick(kFixedDt);
         CHECK(w.entities.empty(), "expired projectile was removed");
+    }
+
+    // 4) Match: setup builds towers + cores; waves spawn minions; killing red core wins.
+    {
+        Match m;
+        MapData md;
+        LanePath lane; lane.points = { { 0, 0 }, { 500, 500 }, { 1000, 1000 } };
+        md.lanes.push_back(lane);
+        md.bases.push_back({ { 0, 0 }, { 40, 40 }, Team::Blue });
+        md.bases.push_back({ { 1000, 1000 }, { 960, 960 }, Team::Red });
+        md.towers.push_back({ { 350, 350 }, Team::Blue });
+        m.Setup(md);
+        CHECK(m.world.entities.size() == 3, "match setup spawned 2 cores + 1 tower");
+
+        for (int i = 0; i < 400; ++i) m.Update(kFixedDt); // ~6.6s; first wave at 5s
+        bool anyMinion = false;
+        for (auto& e : m.world.entities) if (e && e->Type() == EntityType::Minion) anyMinion = true;
+        CHECK(anyMinion, "a minion wave spawned");
+
+        for (auto& e : m.world.entities)
+            if (e && e->Type() == EntityType::Nexus && e->team == Team::Red) e->alive = false;
+        m.Update(kFixedDt);
+        CHECK(m.result == Match::Result::Victory, "destroying red core => Victory");
     }
 
     std::printf(g_fails == 0 ? "\nALL TESTS PASSED\n" : "\n%d TEST(S) FAILED\n", g_fails);

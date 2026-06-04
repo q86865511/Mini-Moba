@@ -29,7 +29,8 @@ static Color TeamColor(shared::Team t) {
 
 void Renderer::Draw(const shared::World& world, const AssetManager& assets,
                     const ViewRegistry& views, const GameCamera& camera,
-                    const shared::Hero* playerHero, const Effects& effects) {
+                    const shared::Hero* playerHero, const Effects& effects,
+                    int matchResult) {
     BeginDrawing();
     ClearBackground(Color{ 12, 14, 18, 255 });
 
@@ -62,6 +63,18 @@ void Renderer::Draw(const shared::World& world, const AssetManager& assets,
         else       snprintf(buf, sizeof(buf), "Q  [%.1fs]", playerHero->qTimer);
         DrawRectangle(14, screenH_ - 46, 150, 32, Color{ 0, 0, 0, 150 });
         DrawText(buf, 24, screenH_ - 40, 22, ready ? Color{ 120, 230, 150, 255 } : Color{ 220, 200, 120, 255 });
+    }
+
+    if (matchResult != 0) {
+        DrawRectangle(0, 0, screenW_, screenH_, Color{ 0, 0, 0, 140 });
+        const char* msg = (matchResult == 1) ? "VICTORY" : "DEFEAT";
+        const Color col = (matchResult == 1) ? Color{ 120, 230, 150, 255 } : Color{ 235, 90, 80, 255 };
+        const int fs = 84;
+        const int w = MeasureText(msg, fs);
+        DrawText(msg, screenW_ / 2 - w / 2, screenH_ / 2 - fs / 2, fs, col);
+        const char* sub = "Press ESC to quit";
+        const int sw = MeasureText(sub, 24);
+        DrawText(sub, screenW_ / 2 - sw / 2, screenH_ / 2 + fs / 2 + 12, 24, RAYWHITE);
     }
 
     EndDrawing();

@@ -14,17 +14,29 @@ Entity* World::Spawn(std::unique_ptr<Entity> e) {
 static void Tickdown(float& t, float dt) { if (t > 0.0f) { t -= dt; if (t < 0.0f) t = 0.0f; } }
 
 void World::Tick(float dt) {
-    for (auto& e : entities) {
+    // Index-based over a fixed count: entities created during Update (e.g. projectiles
+    // from Spawn*) are appended past `n` and handled next tick. This avoids iterator
+    // invalidation when the vector reallocates mid-loop. The pointed-to entity objects
+    // live on the heap (unique_ptr), so raw pointers stay valid across reallocation.
+    const size_t n = entities.size();
+    for (size_t i = 0; i < n; ++i) {
+        Entity* e = entities[i].get();
         if (!e) continue;
         Tickdown(e->attackAnimTime, dt);
         Tickdown(e->hurtAnimTime, dt);
         Tickdown(e->attackTimer, dt);
         if (e->alive) e->Update(*this, dt);
+        else e->deadTimer += dt;
     }
-    // Remove dead projectiles immediately (they have no corpse/death animation).
+    // Cleanup: projectiles vanish at once; minions/monsters after a short death pause.
+    // Heroes / towers / cores stay (corpse or destroyed-state visuals).
     entities.erase(std::remove_if(entities.begin(), entities.end(),
         [](const std::unique_ptr<Entity>& e) {
-            return e && !e->alive && e->Type() == EntityType::Projectile;
+            if (!e || e->alive) return false;
+            if (e->Type() == EntityType::Projectile) return true;
+            if (e->Type() == EntityType::Minion || e->Type() == EntityType::NeutralMonster)
+                return e->deadTimer > 1.2f;
+            return false;
         }), entities.end());
 }
 

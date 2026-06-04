@@ -17,7 +17,8 @@ public:
 
     void Draw(const shared::World& world, const AssetManager& assets,
               const ViewRegistry& views, const GameCamera& camera,
-              const shared::Hero* playerHero, const Effects& effects);
+              const shared::Hero* playerHero, const Effects& effects,
+              int matchResult); // 0=ongoing, 1=victory, 2=defeat
 
 private:
     void DrawGround(const AssetManager& assets);

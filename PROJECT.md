@@ -115,7 +115,7 @@
 - [x] 階段 1：shared 模擬 + 右鍵移動
 - [x] 階段 2：OO 重構 + 資產管線 + 攝影機
 - [x] 階段 3：戰鬥核心（HP / 普攻 / 技能 / 特效音效）
-- [ ] 階段 4：兵線 + 塔 + 主堡（PvE 推塔）
+- [x] 階段 4：兵線 + 塔 + 主堡（PvE 推塔）
 - [ ] 階段 5：中立資源 + 經濟成長
 - [ ] 階段 6：完整一場 + 打磨
 - [ ] 階段 7：敵方英雄 AI
@@ -131,6 +131,7 @@
 - 2026-06-04：完成階段 2。`shared` 重構為 OO（`Entity` 基底 + `Hero`，`World` 持有 `vector<unique_ptr<Entity>>`）；client 拆成 `Game`/`AssetManager`/`Renderer`/`GameCamera`/`Input`/`Audio` 模組；程序生成英雄與草地貼圖、移動音效與環境背景音樂；Camera2D 跟隨英雄、右鍵移動。
 - 2026-06-04：改用使用者自製的**原創素材包**（移除先前 Kenney 試用素材與下載）。接入 `moba_asset_pack` 三線地圖當世界背景（2048²）、`moba_interaction_pack` 的 `ember_vanguard` 動畫英雄（idle/move）；新增 `AnimatedSprite` 模組（sprite sheet 動畫）、`AssetManager` 改載入新包、CMake 增量複製 `assets/`。英雄起點在藍方基地。截圖驗證地圖與英雄渲染正常。
 - 2026-06-04：完成階段 3（戰鬥核心）。資料驅動動畫（讀 `_actions.json` → `AnimationSet`/`AnimationPlayer` + per-entity `ViewRegistry`，載入全部 18 sprite sheet）；`Entity` 戰鬥屬性、`World::DealDamage`/`SpawnProjectile`、`Projectile`；`Hero` 範圍自動普攻 + Q skillshot（CD）；傷害飄字 + 命中環 + 命中/施法音效 + 受擊/死亡動畫；紅方假人會反擊。新增無 GUI 戰鬥單元測試 `tests/combat_test.cpp`（全通過）。
+- 2026-06-04：完成階段 4（兵線+塔+主堡）。讀 `interactive_map_zones.json`（座標與地圖對齊）→ `MapData`；新增 `Match`（依地圖建塔/主堡、每 28s 三路成波生成藍紅小兵、勝負判定）、`Minion`（沿兵線行軍 + 範圍攻擊；近戰/遠程/攻城）、`Tower`（範圍射擊）、`Nexus`；死亡小兵延遲清除。勝負畫面（Victory/Defeat）。**修掉一個崩潰**：`World::Tick` range-for 中 `SpawnProjectile` 的 `push_back` 使 vector 重配置→迭代器失效，改為索引迴圈。Match 單元測試 + 17 秒健康檢查（撐過多波不崩潰）通過。
 
 ---
 
