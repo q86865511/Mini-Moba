@@ -24,6 +24,6 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(raylib)
 
 # Subprojects. More are added as the phases progress:
-#   add_subdirectory(shared)   # phase 1: pure simulation library
+add_subdirectory(shared)       # pure simulation library (no raylib / no net)
 #   add_subdirectory(server)   # phase 2: authoritative server (ENet)
 add_subdirectory(client)
