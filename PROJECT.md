@@ -18,11 +18,11 @@
 ## 2. 技術棧（Tech Stack）
 
 - **語言**：C++（C++17）
-- **繪圖 / 視窗 / 輸入 / 音效**：Raylib
+- **繪圖 / 視窗 / 輸入 / 音效**：Raylib **5.5**（用 CMake FetchContent 靜態連結；vcpkg 的 6.0 在此機器 `EndDrawing` 失效＝白畫面，故固定 5.5）
 - **網路**：ENet（為遊戲設計的可靠 UDP）
 - **腳本層**：Lua + sol2（中後期才導入，學習目標，貼近 LoL 內容層）
 - **資料**：JSON（`nlohmann/json`）放英雄 / 技能 / 道具 / 地圖數值，前後端共讀
-- **建置**：CMake + vcpkg（manifest 模式）
+- **建置**：CMake；raylib 用 FetchContent（固定 5.5），其餘函式庫（之後的 enet/lua/sol2/json）用 vcpkg（manifest 模式）
 - **編譯器 / IDE**：Visual Studio 2026 Community（MSVC）
 - **版本控制**：Git
 
@@ -110,7 +110,7 @@
 
 ## 6. 目前進度
 
-- [ ] 階段 0：工具鏈 + 視窗
+- [x] 階段 0：工具鏈 + 視窗
 - [ ] 階段 1：shared 模擬 + 點擊移動
 - [ ] 階段 2：ENet + 模擬移到伺服器
 - [ ] 階段 3：核心 MOBA 機制
@@ -122,13 +122,14 @@
 
 ### 開發日誌
 - 2026-06-04：完成技術選型討論（從原本 web/JS 改為原生 C++）。確認 VS2026 內建工具鏈可用。開始階段 0。
+- 2026-06-04：完成階段 0。建立 CMake 專案骨架，client 用 raylib 開出視窗（方塊跟隨滑鼠）。踩到 raylib 6.0 在本機 `EndDrawing` 失效（白畫面＋無回應＋40 萬 FPS 空轉），改用 FetchContent 固定 raylib 5.5 後正常（60 FPS、視窗有回應）。
 
 ---
 
 ## 7. 如何建置與執行
 
 ```powershell
-# 設定（第一次會用 vcpkg 下載並編譯 raylib，需等幾分鐘）
+# 設定（第一次會用 FetchContent 下載並編譯 raylib 5.5，需等幾分鐘）
 $cmake = 'E:\VSstudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe'
 & $cmake --preset default          # 用 CMakePresets.json 的 default 設定檔
 

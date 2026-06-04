@@ -1,6 +1,5 @@
-# Client executable (rendering + input). Raylib lives ONLY here.
-find_package(raylib CONFIG REQUIRED)
-
+# Client executable (rendering + input). raylib lives ONLY here.
+# (raylib target is provided by FetchContent in the top-level CMakeLists.txt.)
 add_executable(client
     src/main.cpp
 )
