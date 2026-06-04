@@ -1,0 +1,15 @@
+# Build output
+/build/
+/out/
+
+# vcpkg installed packages (restored from vcpkg.json)
+/vcpkg_installed/
+
+# Visual Studio / editor
+.vs/
+*.user
+CMakeUserPresets.json
+
+# OS
+Thumbs.db
+.DS_Store
