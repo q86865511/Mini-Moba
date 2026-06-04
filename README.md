@@ -1,9 +1,10 @@
 # Mini MOBA
 
-一個用**原生 C++** 製作的簡化版多人 MOBA（靈感來自 *League of Legends*）。
-這是一個循序漸進的學習專案，刻意貼近 LoL 真正的做法：**C++ 引擎 + Lua 內容腳本 + 原生客戶端**。
+一個用**原生 C++** 製作的簡化版 MOBA（靈感來自 *League of Legends*）。
+**先做出本地能玩的單機版**（兵線、塔、主堡、中立資源、技能、經濟、勝負），**之後再加多人連線**。
+學習專案，刻意貼近 LoL 真正的做法：C++ 引擎 + Lua 內容腳本 + 原生客戶端。
 
-> 目標：能跑、能連線、能跟朋友玩——重點是學習，不是功能完整。
+> 重點是學習與「能玩」，不是功能完整。
 
 ---
 
@@ -13,30 +14,38 @@
 |---|---|
 | 語言 | C++17 |
 | 繪圖 / 視窗 / 輸入 / 音效 | [raylib](https://www.raylib.com/) 5.5（CMake FetchContent，靜態連結） |
-| 網路（規劃中） | [ENet](http://enet.bespin.org/)（為遊戲設計的可靠 UDP） |
-| 腳本層（規劃中） | Lua + [sol2](https://github.com/ThePhD/sol2) |
+| 美術 / 音效 | 程序生成為主（程式碼畫）＋ 免費 CC0（Kenney / itch.io）＋ 選配本機 AI 生圖 |
 | 資料 | JSON（nlohmann/json） |
+| 腳本層（中後期） | Lua + [sol2](https://github.com/ThePhD/sol2) |
+| 網路（最後階段） | [ENet](http://enet.bespin.org/)（為遊戲設計的可靠 UDP） |
 | 建置 | CMake + vcpkg |
 | 編譯器 | MSVC（Visual Studio 2022 / 2026） |
 
 ## 架構原則
 
-- **伺服器權威**：所有遊戲狀態的「真相」都在伺服器；客戶端只送輸入、不送結果。
-- **共用模擬庫 `shared`**：純邏輯（不碰繪圖 / 網路），伺服器與客戶端共用——**邏輯只寫一次**。
-- **依賴衛生**：raylib 只在 client；伺服器無圖形依賴，可在 Linux VPS 編譯部署。
-- **固定 tick + 快照插值**：伺服器固定頻率模擬並廣播快照，客戶端插值繪圖。
+- **邏輯與渲染分離**：模擬放在 `shared` 純邏輯庫（**不碰 raylib、不碰網路**），`client` 只負責
+  渲染 / 輸入 / 音效 / 資產。**邏輯只寫一次**——單機現在用它，之後多人連線時伺服器原封不動重用。
+- **物件導向實體階層**：`Entity` 基底類別 → `Hero` / `Minion` / `Tower` / `Nexus` / `NeutralMonster`
+  / `Projectile`；`World` 持有實體集合並逐一更新。
+- **模組化 client**：`Game` / `AssetManager` / `Renderer` / `GameCamera` / `Input` / `Audio`。
+- **固定時間步長**：模擬以固定 dt 推進（決定性，之後可無痛搬到伺服器）。
+- **美術以程序生成為主**：畫面用程式碼畫出（形狀/漸層/生成貼圖），可再用 CC0/AI 升級。
+- **（多人階段才適用）伺服器權威 + 快照插值**：屆時把 `shared` 接到權威伺服器，client 改薄。
 
 ## 專案結構
 
 ```
 .
-├─ client/           客戶端：raylib 繪圖 + 輸入（目前：階段 0 視窗）
-├─ shared/           （規劃）純模擬庫，前後端共用
-├─ server/           （規劃）權威伺服器（ENet）
-├─ CMakeLists.txt    頂層建置
-├─ CMakePresets.json 建置設定檔
-├─ vcpkg.json        相依套件清單
-└─ PROJECT.md        詳細開發計畫與進度
+├─ shared/                  純模擬庫（無 raylib／無網路）
+│  ├─ include/shared/       Vec2.h, Team.h, Entity.h, World.h, entities/Hero.h
+│  └─ src/                  World.cpp, entities/Hero.cpp
+├─ client/                  客戶端（raylib）：模組化
+│  └─ src/                  main.cpp, Game, AssetManager, Renderer, GameCamera, Input, Audio
+├─ CMakeLists.txt           頂層建置（FetchContent 取得 raylib 5.5）
+├─ CMakePresets.json        建置設定檔（vcpkg 工具鏈）
+├─ vcpkg.json               相依套件清單
+└─ PROJECT.md               詳細開發計畫與進度
+                            （server/ 會在多人連線階段才新增）
 ```
 
 ## 建置與執行
@@ -49,22 +58,25 @@ vcpkg（設好 `VCPKG_ROOT` 環境變數）。第一次設定會用 FetchContent
 cmake --preset default
 cmake --build build --config Debug
 
-# 執行（階段 0：跟隨滑鼠的方塊視窗，ESC 離開）
+# 執行：右鍵移動、攝影機跟隨，ESC 離開
 .\build\client\Debug\client.exe
 ```
 
 ## 開發進度
 
 - [x] **階段 0**：工具鏈 + 視窗
-- [ ] 階段 1：`shared` 模擬 + 點擊移動
-- [ ] 階段 2：ENet + 模擬移到伺服器
-- [ ] 階段 3：核心 MOBA 機制
-- [ ] 階段 4：多人 + 房間 + 隊伍（3v3 多路）
-- [ ] 階段 5：連線打磨
-- [ ] 階段 6：內容與平衡 + Lua 腳本層
+- [x] **階段 1**：`shared` 模擬 + 右鍵移動
+- [x] **階段 2**：OO 重構 + 資產管線 + 攝影機
+- [ ] 階段 3：戰鬥核心（HP / 普攻 / 技能 / 特效音效）
+- [ ] 階段 4：兵線 + 塔 + 主堡（PvE 推塔破堡）
+- [ ] 階段 5：中立資源 + 經濟成長
+- [ ] 階段 6：完整一場 + 打磨
+- [ ] 階段 7：敵方英雄 AI
+- [ ] 階段 8：多人連線
 
 完整的開發計畫、架構說明與每階段驗收標準見 **[PROJECT.md](PROJECT.md)**。
 
 ## 授權與致謝
 
-個人學習專案。使用 [raylib](https://github.com/raysan5/raylib)（zlib 授權）等開源函式庫，各自的授權以其專案為準。
+個人學習專案。使用 [raylib](https://github.com/raysan5/raylib)（zlib 授權）等開源函式庫，各自授權
+以其專案為準。日後若加入下載的素材，來源與授權會記在 `assets/CREDITS.md`。
