@@ -12,7 +12,7 @@ void Projectile::Update(World& world, float dt) {
         if (e->Type() == EntityType::Projectile) continue;
         if (!e->IsEnemyOf(*this)) continue;
         if (Distance(pos, e->pos) <= e->radius + radius) {
-            world.DealDamage(*e, damage);
+            world.DealDamage(*e, damage, team);
             alive = false;
             return;
         }

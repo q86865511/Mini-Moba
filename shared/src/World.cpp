@@ -1,5 +1,6 @@
 #include "shared/World.h"
 #include "shared/entities/Projectile.h"
+#include "shared/entities/Hero.h"
 #include <algorithm>
 
 namespace shared {
@@ -52,15 +53,29 @@ Entity* World::FindNearestEnemy(const Entity& self, float maxRange) const {
     return best;
 }
 
-void World::DealDamage(Entity& target, float dmg) {
+void World::DealDamage(Entity& target, float dmg, Team byTeam) {
     if (!target.alive) return;
     target.hp -= dmg;
     target.hurtAnimTime = 0.25f;
     hitEvents.push_back({ target.pos, dmg });
-    if (target.hp <= 0.0f) {
-        target.hp = 0.0f;
-        target.alive = false;
+    if (target.hp > 0.0f) return;
+
+    target.hp = 0.0f;
+    target.alive = false;
+
+    // Reward the killing team's heroes: gold to the nearest, xp to all in range.
+    if (byTeam == Team::Neutral) return;
+    if (target.goldReward <= 0 && target.xpReward <= 0.0f) return;
+    Hero* goldHero = nullptr;
+    float best = 1400.0f;
+    for (auto& e : entities) {
+        if (!e || !e->alive || e->Type() != EntityType::Hero || e->team != byTeam) continue;
+        const float d = Distance(e->pos, target.pos);
+        if (d > 1400.0f) continue;
+        static_cast<Hero*>(e.get())->AddXp(target.xpReward);
+        if (d < best) { best = d; goldHero = static_cast<Hero*>(e.get()); }
     }
+    if (goldHero) goldHero->AddGold(target.goldReward);
 }
 
 void World::SpawnProjectile(Vec2 pos, Vec2 dir, float speed, float dmg, Team team,

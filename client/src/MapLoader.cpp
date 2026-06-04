@@ -39,5 +39,13 @@ shared::MapData LoadMapZones(const std::string& path) {
             md.bases.push_back(bs);
         }
     }
+    if (j.contains("jungle_camps")) {
+        for (auto& c : j["jungle_camps"]) {
+            shared::CampSite cs;
+            cs.pos = { c["pos_px"][0].get<float>(), c["pos_px"][1].get<float>() };
+            cs.monster = c["monster"].get<std::string>();
+            md.camps.push_back(cs);
+        }
+    }
     return md;
 }

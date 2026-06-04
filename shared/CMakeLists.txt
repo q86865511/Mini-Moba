@@ -7,6 +7,7 @@ add_library(shared STATIC
     src/entities/Projectile.cpp
     src/entities/Minion.cpp
     src/entities/Tower.cpp
+    src/entities/NeutralMonster.cpp
 )
 
 target_include_directories(shared PUBLIC include)

@@ -9,12 +9,16 @@ InputCommand Input::Process(shared::Hero* hero, const GameCamera& camera) {
     const Vector2 w = camera.ScreenToWorld(GetMousePosition());
     cmd.worldMouse = { w.x, w.y };
 
-    // Hold/click RIGHT mouse to walk toward the cursor.
     if (IsMouseButtonDown(MOUSE_BUTTON_RIGHT)) hero->SetMoveTarget(cmd.worldMouse);
     if (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)) cmd.moved = true;
 
-    // Q: cast the ability toward the cursor.
     if (IsKeyPressed(KEY_Q)) cmd.castQ = true;
+    if (IsKeyPressed(KEY_B)) cmd.toggleShop = true;
+
+    if (IsKeyPressed(KEY_ONE))   cmd.buyIndex = 0;
+    else if (IsKeyPressed(KEY_TWO))   cmd.buyIndex = 1;
+    else if (IsKeyPressed(KEY_THREE)) cmd.buyIndex = 2;
+    else if (IsKeyPressed(KEY_FOUR))  cmd.buyIndex = 3;
 
     return cmd;
 }

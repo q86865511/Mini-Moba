@@ -24,8 +24,8 @@ public:
 
     Entity* FindNearestEnemy(const Entity& self, float maxRange) const;
 
-    // Apply damage (handles death + records a HitEvent).
-    void DealDamage(Entity& target, float dmg);
+    // Apply damage (handles death, rewards to `byTeam`, and records a HitEvent).
+    void DealDamage(Entity& target, float dmg, Team byTeam = Team::Neutral);
 
     // Spawn a straight-line projectile owned by `ownerId` on `team`.
     void SpawnProjectile(Vec2 pos, Vec2 dir, float speed, float dmg, Team team,

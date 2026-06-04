@@ -10,7 +10,27 @@ Hero::Hero(const std::string& slug) {
     attackDamage = 55.0f;
     attackRange = 120.0f;
     attackCooldown = 0.7f;
+    goldReward = 200;
+    xpReward = 130.0f;
     visualKey = slug;
+}
+
+float Hero::XpToNext() const { return 100.0f + (float)(level - 1) * 60.0f; }
+
+void Hero::LevelUp() {
+    ++level;
+    maxHp += 90.0f;
+    hp += 90.0f;
+    attackDamage += 9.0f;
+    if (qCooldown > 1.5f) qCooldown -= 0.1f;
+}
+
+void Hero::AddXp(float amount) {
+    xp += amount;
+    while (level < 18 && xp >= XpToNext()) {
+        xp -= XpToNext();
+        LevelUp();
+    }
 }
 
 void Hero::SetMoveTarget(Vec2 target) {
@@ -32,16 +52,14 @@ bool Hero::CastQ(World& world, Vec2 targetPos) {
 void Hero::Update(World& world, float dt) {
     if (qTimer > 0.0f) { qTimer -= dt; if (qTimer < 0.0f) qTimer = 0.0f; }
 
-    // Auto-attack the nearest enemy in range.
     Entity* target = world.FindNearestEnemy(*this, attackRange);
     if (target && attackTimer <= 0.0f) {
         facing = Normalized(target->pos - pos);
-        world.DealDamage(*target, attackDamage);
+        world.DealDamage(*target, attackDamage, team);
         attackTimer = attackCooldown;
         attackAnimTime = 0.3f;
     }
 
-    // Movement.
     if (!hasTarget) { moving = false; return; }
     const Vec2 toTarget = moveTarget - pos;
     const float dist = Length(toTarget);

@@ -6,12 +6,13 @@ class GameCamera;
 
 // What the player asked for this frame.
 struct InputCommand {
-    bool        moved = false;   // a fresh right-click (for the move cue)
-    bool        castQ = false;   // pressed Q this frame
-    shared::Vec2 worldMouse{};   // cursor position in world space
+    bool         moved = false;      // fresh right-click (move cue)
+    bool         castQ = false;      // pressed Q
+    bool         toggleShop = false; // pressed B
+    int          buyIndex = -1;      // pressed 1..4 to buy (else -1)
+    shared::Vec2 worldMouse{};
 };
 
-// Translates raw input into commands on the player's hero.
 class Input {
 public:
     InputCommand Process(shared::Hero* hero, const GameCamera& camera);

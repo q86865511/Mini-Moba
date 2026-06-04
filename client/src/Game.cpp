@@ -37,6 +37,8 @@ void Game::Run() {
         const InputCommand cmd = input_.Process(hero_, camera_);
         if (cmd.moved) audio_.PlayMove();
         if (cmd.castQ && hero_ && hero_->CastQ(match_.world, cmd.worldMouse)) audio_.PlayCast();
+        if (cmd.toggleShop) shop_.Toggle();
+        if (shop_.open && cmd.buyIndex >= 0 && hero_ && shop_.Buy(cmd.buyIndex, *hero_)) audio_.PlayCast();
 
         // 2) Fixed-timestep match update (waves + world tick + win check)
         accumulator_ += GetFrameTime();
@@ -62,6 +64,6 @@ void Game::Run() {
 
         const int res = (match_.result == shared::Match::Result::Victory) ? 1
                       : (match_.result == shared::Match::Result::Defeat)  ? 2 : 0;
-        renderer_.Draw(match_.world, assets_, views_, camera_, hero_, effects_, res);
+        renderer_.Draw(match_.world, assets_, views_, camera_, hero_, effects_, res, shop_);
     }
 }

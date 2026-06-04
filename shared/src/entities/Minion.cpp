@@ -12,7 +12,7 @@ void Minion::Update(World& world, float dt) {
         moving = false;
         if (attackTimer <= 0.0f) {
             if (ranged) world.SpawnProjectile(pos, d, 600.0f, attackDamage, team, id, attackRange + 80.0f);
-            else        world.DealDamage(*target, attackDamage);
+            else        world.DealDamage(*target, attackDamage, team);
             attackTimer = attackCooldown;
             attackAnimTime = 0.3f;
         }

@@ -10,6 +10,7 @@ add_executable(client
     src/GameCamera.cpp
     src/Renderer.cpp
     src/MapLoader.cpp
+    src/Shop.cpp
     src/Input.cpp
     src/Audio.cpp
 )

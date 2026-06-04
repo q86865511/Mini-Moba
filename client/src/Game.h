@@ -6,6 +6,7 @@
 #include "Renderer.h"
 #include "EntityView.h"
 #include "Effects.h"
+#include "Shop.h"
 #include "Input.h"
 #include "Audio.h"
 
@@ -31,6 +32,7 @@ private:
     Renderer     renderer_{ kScreenW, kScreenH, kWorldW, kWorldH };
     ViewRegistry views_;
     Effects      effects_;
+    Shop         shop_;
     Input        input_;
     Audio        audio_;
 

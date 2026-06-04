@@ -34,6 +34,10 @@ public:
     float attackCooldown = 1.0f;
     float attackTimer    = 0.0f; // counts down to next allowed attack
 
+    // Bounty granted to the killing team when this entity dies.
+    int   goldReward = 0;
+    float xpReward   = 0.0f;
+
     // Presentation hints, read by the client. These are plain data (no raylib),
     // so `shared` stays free of any rendering dependency.
     std::string visualKey;       // which sprite sheet the client should use
@@ -48,7 +52,9 @@ public:
     virtual void Update(World& world, float dt) {}
 
     bool IsEnemyOf(const Entity& other) const {
-        return team != other.team && team != Team::Neutral && other.team != Team::Neutral;
+        if (team == other.team) return false;
+        if (team == Team::Neutral && other.team == Team::Neutral) return false;
+        return true; // opposite teams, or neutral-vs-team, are enemies
     }
 };
 

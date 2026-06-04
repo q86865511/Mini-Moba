@@ -3,6 +3,7 @@
 #include "GameCamera.h"
 #include <vector>
 #include <algorithm>
+#include <string>
 #include <cstdio>
 
 static Vector2 ToScreen(shared::Vec2 v) { return Vector2{ v.x, v.y }; }
@@ -23,14 +24,14 @@ static Color TeamColor(shared::Team t) {
     switch (t) {
         case shared::Team::Blue: return Color{ 70, 150, 255, 255 };
         case shared::Team::Red:  return Color{ 230, 70, 70, 255 };
-        default:                 return Color{ 200, 200, 90, 255 };
+        default:                 return Color{ 200, 190, 90, 255 };
     }
 }
 
 void Renderer::Draw(const shared::World& world, const AssetManager& assets,
                     const ViewRegistry& views, const GameCamera& camera,
                     const shared::Hero* playerHero, const Effects& effects,
-                    int matchResult) {
+                    int matchResult, const Shop& shop) {
     BeginDrawing();
     ClearBackground(Color{ 12, 14, 18, 255 });
 
@@ -53,9 +54,10 @@ void Renderer::Draw(const shared::World& world, const AssetManager& assets,
     effects.DrawWorld();
     EndMode2D();
 
-    // HUD
-    DrawText("hold RIGHT mouse: move   |   Q: ability   |   ESC: quit", 16, 16, 20, RAYWHITE);
-    DrawFPS(screenW_ - 90, 16);
+    // --- HUD (screen space) ---
+    DrawText("RIGHT: move   Q: ability   B: shop   ESC: quit", 14, 12, 18, RAYWHITE);
+    DrawFPS(screenW_ - 90, screenH_ - 24);
+
     if (playerHero) {
         const bool ready = playerHero->qTimer <= 0.0f;
         char buf[32];
@@ -64,6 +66,10 @@ void Renderer::Draw(const shared::World& world, const AssetManager& assets,
         DrawRectangle(14, screenH_ - 46, 150, 32, Color{ 0, 0, 0, 150 });
         DrawText(buf, 24, screenH_ - 40, 22, ready ? Color{ 120, 230, 150, 255 } : Color{ 220, 200, 120, 255 });
     }
+
+    DrawHud(playerHero);
+    DrawMinimap(world, assets, camera);
+    if (shop.open && matchResult == 0) DrawShopPanel(shop, playerHero);
 
     if (matchResult != 0) {
         DrawRectangle(0, 0, screenW_, screenH_, Color{ 0, 0, 0, 140 });
@@ -120,5 +126,86 @@ void Renderer::DrawEntity(const shared::Entity& e, const AssetManager& assets, c
         DrawRectangle((int)x - 1, (int)y - 1, (int)w + 2, (int)h + 2, Color{ 0, 0, 0, 170 });
         DrawRectangle((int)x, (int)y, (int)w, (int)h, Color{ 60, 24, 24, 255 });
         DrawRectangle((int)x, (int)y, (int)(w * frac), (int)h, TeamColor(e.team));
+    }
+}
+
+void Renderer::DrawHud(const shared::Hero* h) {
+    if (!h) return;
+    char buf[80];
+
+    // Gold (top-right)
+    snprintf(buf, sizeof(buf), "Gold: %d", h->gold);
+    DrawRectangle(screenW_ - 200, 10, 188, 30, Color{ 0, 0, 0, 150 });
+    DrawText(buf, screenW_ - 190, 16, 22, Color{ 255, 220, 90, 255 });
+
+    // Level + XP bar (bottom-center)
+    const int bw = 320, bh = 16;
+    const int bx = screenW_ / 2 - bw / 2, by = screenH_ - 30;
+    DrawRectangle(bx - 1, by - 1, bw + 2, bh + 2, Color{ 0, 0, 0, 170 });
+    DrawRectangle(bx, by, bw, bh, Color{ 40, 40, 55, 255 });
+    float frac = h->XpToNext() > 0.0f ? h->xp / h->XpToNext() : 0.0f;
+    if (frac < 0) frac = 0; if (frac > 1) frac = 1;
+    DrawRectangle(bx, by, (int)(bw * frac), bh, Color{ 120, 180, 255, 255 });
+    snprintf(buf, sizeof(buf), "Lv %d", h->level);
+    DrawText(buf, bx - 52, by - 3, 22, RAYWHITE);
+
+    // Items (just above the xp bar)
+    if (!h->items.empty()) {
+        std::string s = "Items: ";
+        for (size_t i = 0; i < h->items.size(); ++i) {
+            s += h->items[i];
+            if (i + 1 < h->items.size()) s += ", ";
+        }
+        const int tw = MeasureText(s.c_str(), 16);
+        DrawText(s.c_str(), screenW_ / 2 - tw / 2, by - 24, 16, Color{ 200, 220, 200, 255 });
+    }
+}
+
+void Renderer::DrawMinimap(const shared::World& world, const AssetManager& assets, const GameCamera& camera) {
+    const int mm = 210, pad = 12;
+    const int mx = screenW_ - mm - pad, my = screenH_ - mm - pad - 50;
+    DrawRectangle(mx - 2, my - 2, mm + 4, mm + 4, Color{ 0, 0, 0, 180 });
+    const Texture2D map = assets.Map();
+    DrawTexturePro(map, { 0, 0, (float)map.width, (float)map.height },
+                   { (float)mx, (float)my, (float)mm, (float)mm }, Vector2{ 0, 0 }, 0.0f,
+                   Color{ 255, 255, 255, 220 });
+
+    const float sc = (float)mm / worldW_;
+    for (auto& e : world.entities) {
+        if (!e || !e->alive || e->Type() == shared::EntityType::Projectile) continue;
+        const int dx = mx + (int)(e->pos.x * sc), dy = my + (int)(e->pos.y * sc);
+        int r = 2;
+        if (e->Type() == shared::EntityType::Hero) r = 4;
+        else if (e->Type() == shared::EntityType::Nexus || e->Type() == shared::EntityType::Tower) r = 3;
+        DrawCircle(dx, dy, (float)r, TeamColor(e->team));
+    }
+
+    const Camera2D cam = camera.Raw();
+    const float vw = screenW_ / cam.zoom, vh = screenH_ / cam.zoom;
+    const float vx = cam.target.x - vw / 2.0f, vy = cam.target.y - vh / 2.0f;
+    DrawRectangleLines(mx + (int)(vx * sc), my + (int)(vy * sc),
+                       (int)(vw * sc), (int)(vh * sc), Color{ 255, 255, 255, 200 });
+}
+
+void Renderer::DrawShopPanel(const Shop& shop, const shared::Hero* h) {
+    const int pw = 440, ph = 320;
+    const int px = screenW_ / 2 - pw / 2, py = screenH_ / 2 - ph / 2;
+    DrawRectangle(0, 0, screenW_, screenH_, Color{ 0, 0, 0, 120 });
+    DrawRectangle(px, py, pw, ph, Color{ 24, 28, 38, 245 });
+    DrawRectangleLines(px, py, pw, ph, Color{ 120, 140, 180, 255 });
+
+    DrawText("SHOP", px + 16, py + 14, 26, RAYWHITE);
+    DrawText("(B to close)", px + 90, py + 20, 18, Color{ 170, 170, 180, 255 });
+    char buf[64];
+    snprintf(buf, sizeof(buf), "Gold: %d", h ? h->gold : 0);
+    DrawText(buf, px + pw - 140, py + 16, 22, Color{ 255, 220, 90, 255 });
+
+    const auto& items = shop.Items();
+    for (size_t i = 0; i < items.size(); ++i) {
+        const int iy = py + 60 + (int)i * 60;
+        const bool afford = h && h->gold >= items[i].cost;
+        snprintf(buf, sizeof(buf), "[%d]  %s  -  %dg", (int)i + 1, items[i].name.c_str(), items[i].cost);
+        DrawText(buf, px + 18, iy, 22, afford ? RAYWHITE : Color{ 130, 130, 130, 255 });
+        DrawText(items[i].desc.c_str(), px + 18, iy + 26, 16, Color{ 160, 200, 160, 255 });
     }
 }
