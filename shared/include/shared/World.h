@@ -1,31 +1,30 @@
 #pragma once
-#include "shared/Vec2.h"
+#include <vector>
+#include <memory>
+#include "shared/Entity.h"
 
-// The authoritative game simulation. Pure logic: no raylib, no networking.
-// In phase 1 the client runs this locally; in phase 2 the server owns it and
-// the client just renders the snapshots it broadcasts.
 namespace shared {
 
-// Fixed simulation timestep. The sim always advances in discrete steps of this
-// size, which keeps movement deterministic and transfers cleanly to the server.
+// Fixed simulation timestep. The sim advances in discrete steps of this size,
+// which keeps movement deterministic and transfers cleanly to a server later.
 constexpr float kFixedDt = 1.0f / 60.0f;
 
-struct Hero {
-    Vec2 pos{};
-    Vec2 moveTarget{};
-    bool hasTarget = false;
-    float moveSpeed = 300.0f; // sim units (pixels in phase 1) per second
-};
-
+// Owns every entity and advances the whole simulation. Pure logic: no raylib.
 class World {
 public:
-    Hero hero;
+    std::vector<std::unique_ptr<Entity>> entities;
 
-    // The only player input in phase 1: "walk to this point".
-    void SetMoveTarget(Vec2 target);
+    // Takes ownership, assigns a unique id, returns a non-owning pointer.
+    Entity* Spawn(std::unique_ptr<Entity> e);
 
-    // Advance the simulation by one fixed step.
+    // Advance the whole simulation by one fixed step.
     void Tick(float dt);
+
+    // Nearest living enemy of `self` within range, or nullptr.
+    Entity* FindNearestEnemy(const Entity& self, float maxRange) const;
+
+private:
+    int nextId_ = 1;
 };
 
 } // namespace shared

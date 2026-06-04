@@ -2,24 +2,33 @@
 
 namespace shared {
 
-void World::SetMoveTarget(Vec2 target) {
-    hero.moveTarget = target;
-    hero.hasTarget = true;
+Entity* World::Spawn(std::unique_ptr<Entity> e) {
+    e->id = nextId_++;
+    Entity* ptr = e.get();
+    entities.push_back(std::move(e));
+    return ptr;
 }
 
 void World::Tick(float dt) {
-    if (!hero.hasTarget) return;
-
-    const Vec2 toTarget = hero.moveTarget - hero.pos;
-    const float dist = Length(toTarget);
-    const float step = hero.moveSpeed * dt;
-
-    if (dist <= step) {
-        hero.pos = hero.moveTarget; // arrive exactly, then stop
-        hero.hasTarget = false;
-    } else {
-        hero.pos = hero.pos + Normalized(toTarget) * step;
+    for (auto& e : entities) {
+        if (e && e->alive) e->Update(*this, dt);
     }
+    // (Dead-entity removal is added in phase 3, once things can actually die.)
+}
+
+Entity* World::FindNearestEnemy(const Entity& self, float maxRange) const {
+    Entity* best = nullptr;
+    float bestDist = maxRange;
+    for (const auto& e : entities) {
+        if (!e || !e->alive || e.get() == &self) continue;
+        if (!e->IsEnemyOf(self)) continue;
+        const float d = Distance(self.pos, e->pos);
+        if (d < bestDist) {
+            bestDist = d;
+            best = e.get();
+        }
+    }
+    return best;
 }
 
 } // namespace shared

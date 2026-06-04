@@ -113,7 +113,7 @@
 
 - [x] 階段 0：工具鏈 + 視窗
 - [x] 階段 1：shared 模擬 + 右鍵移動
-- [ ] 階段 2：OO 重構 + 資產管線 + 攝影機
+- [x] 階段 2：OO 重構 + 資產管線 + 攝影機
 - [ ] 階段 3：戰鬥核心（HP / 普攻 / 技能 / 特效音效）
 - [ ] 階段 4：兵線 + 塔 + 主堡（PvE 推塔）
 - [ ] 階段 5：中立資源 + 經濟成長
@@ -128,6 +128,7 @@
 - 2026-06-04：完成階段 0。建立 CMake 專案骨架，client 用 raylib 開出視窗（方塊跟隨滑鼠）。踩到 raylib 6.0 在本機 `EndDrawing` 失效（白畫面＋無回應＋40 萬 FPS 空轉），改用 FetchContent 固定 raylib 5.5 後正常。
 - 2026-06-04：完成階段 1。建立 `shared` 純模擬庫（`Vec2` / `Hero` / `World::Tick`，零 raylib／零網路）；client 固定時間步長、右鍵移動、格線地圖。期間關閉 Smart App Control 解決 exe 被擋。
 - 2026-06-04：**改方向為「單機優先」**——先做出能玩的單機 MOBA 再連線，並織入美術/音效、要求 OO + 模組化。重排 roadmap（階段 2 起為單機內容，多人連線移到階段 8）。現有 `shared`/`client` 架構正好支援，不需重來。
+- 2026-06-04：完成階段 2。`shared` 重構為 OO（`Entity` 基底 + `Hero`，`World` 持有 `vector<unique_ptr<Entity>>`）；client 拆成 `Game`/`AssetManager`/`Renderer`/`GameCamera`/`Input`/`Audio` 模組；**程序生成**英雄與草地貼圖、移動音效與環境背景音樂（全程式碼生成、無外部檔案）；Camera2D 跟隨英雄、地圖 2560×1440、右鍵移動。建置/執行驗證 `Responding=True`、貼圖與音訊裝置載入正常。
 
 ---
 
