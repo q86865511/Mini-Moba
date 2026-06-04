@@ -1,4 +1,5 @@
 #pragma once
+#include "raylib.h"
 #include "shared/World.h"
 #include "shared/entities/Hero.h"
 
@@ -14,11 +15,11 @@ public:
           worldW_(worldWidth), worldH_(worldHeight) {}
 
     void Draw(const shared::World& world, const AssetManager& assets,
-              const GameCamera& camera, const shared::Hero* playerHero);
+              const GameCamera& camera, const shared::Hero* playerHero,
+              Rectangle heroFrame);
 
 private:
     void DrawGround(const AssetManager& assets);
-    void DrawEntities(const shared::World& world, const AssetManager& assets);
 
     int   screenW_;
     int   screenH_;

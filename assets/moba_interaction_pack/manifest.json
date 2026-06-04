@@ -1,0 +1,546 @@
+{
+  "asset_pack": "moba_interaction_pack",
+  "generated": "2026-06-04",
+  "style": "original stylized MOBA prototype assets, transparent sprites, no logo, no watermark",
+  "frame_size_px": [
+    256,
+    256
+  ],
+  "sprite_sheet_columns": 6,
+  "categories": {
+    "heroes": 5,
+    "minions": 6,
+    "monsters": 3,
+    "towers": 2,
+    "cores": 2,
+    "map_props": 1
+  },
+  "map_interactions": {
+    "zones_json": "outputs/moba_interaction_pack/map/interactive_map_zones.json",
+    "preview": "outputs/moba_interaction_pack/map/interactive_map_zones_preview.png"
+  },
+  "overview": "outputs/moba_interaction_pack/preview/moba_interaction_pack_overview.png",
+  "assets": [
+    {
+      "slug": "ember_vanguard",
+      "name": "Ember Vanguard",
+      "category": "hero",
+      "sheet": "outputs/moba_interaction_pack/sprites/heroes/ember_vanguard/ember_vanguard_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/heroes/ember_vanguard/ember_vanguard_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "frost_ranger",
+      "name": "Frost Ranger",
+      "category": "hero",
+      "sheet": "outputs/moba_interaction_pack/sprites/heroes/frost_ranger/frost_ranger_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/heroes/frost_ranger/frost_ranger_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "storm_oracle",
+      "name": "Storm Oracle",
+      "category": "hero",
+      "sheet": "outputs/moba_interaction_pack/sprites/heroes/storm_oracle/storm_oracle_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/heroes/storm_oracle/storm_oracle_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "iron_sentinel",
+      "name": "Iron Sentinel",
+      "category": "hero",
+      "sheet": "outputs/moba_interaction_pack/sprites/heroes/iron_sentinel/iron_sentinel_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/heroes/iron_sentinel/iron_sentinel_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "night_veil",
+      "name": "Night Veil",
+      "category": "hero",
+      "sheet": "outputs/moba_interaction_pack/sprites/heroes/night_veil/night_veil_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/heroes/night_veil/night_veil_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "blue_melee_minion",
+      "name": "Blue Melee Minion",
+      "category": "minion",
+      "sheet": "outputs/moba_interaction_pack/sprites/minions/blue_melee_minion/blue_melee_minion_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/minions/blue_melee_minion/blue_melee_minion_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "blue_ranged_minion",
+      "name": "Blue Ranged Minion",
+      "category": "minion",
+      "sheet": "outputs/moba_interaction_pack/sprites/minions/blue_ranged_minion/blue_ranged_minion_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/minions/blue_ranged_minion/blue_ranged_minion_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "blue_siege_minion",
+      "name": "Blue Siege Minion",
+      "category": "minion",
+      "sheet": "outputs/moba_interaction_pack/sprites/minions/blue_siege_minion/blue_siege_minion_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/minions/blue_siege_minion/blue_siege_minion_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "red_melee_minion",
+      "name": "Red Melee Minion",
+      "category": "minion",
+      "sheet": "outputs/moba_interaction_pack/sprites/minions/red_melee_minion/red_melee_minion_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/minions/red_melee_minion/red_melee_minion_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "red_ranged_minion",
+      "name": "Red Ranged Minion",
+      "category": "minion",
+      "sheet": "outputs/moba_interaction_pack/sprites/minions/red_ranged_minion/red_ranged_minion_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/minions/red_ranged_minion/red_ranged_minion_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "red_siege_minion",
+      "name": "Red Siege Minion",
+      "category": "minion",
+      "sheet": "outputs/moba_interaction_pack/sprites/minions/red_siege_minion/red_siege_minion_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/minions/red_siege_minion/red_siege_minion_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "stone_golem",
+      "name": "Stone Golem",
+      "category": "monster",
+      "sheet": "outputs/moba_interaction_pack/sprites/monsters/stone_golem/stone_golem_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/monsters/stone_golem/stone_golem_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "bramble_spirit",
+      "name": "Bramble Spirit",
+      "category": "monster",
+      "sheet": "outputs/moba_interaction_pack/sprites/monsters/bramble_spirit/bramble_spirit_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/monsters/bramble_spirit/bramble_spirit_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "river_drake",
+      "name": "River Drake",
+      "category": "monster",
+      "sheet": "outputs/moba_interaction_pack/sprites/monsters/river_drake/river_drake_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/monsters/river_drake/river_drake_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "move",
+        "attack",
+        "hurt",
+        "death"
+      ]
+    },
+    {
+      "slug": "blue_tower",
+      "name": "Blue Tower",
+      "category": "tower",
+      "sheet": "outputs/moba_interaction_pack/sprites/tower/blue_tower/blue_tower_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/tower/blue_tower/blue_tower_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "charge",
+        "fire",
+        "damaged",
+        "destroyed"
+      ]
+    },
+    {
+      "slug": "red_tower",
+      "name": "Red Tower",
+      "category": "tower",
+      "sheet": "outputs/moba_interaction_pack/sprites/tower/red_tower/red_tower_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/tower/red_tower/red_tower_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "charge",
+        "fire",
+        "damaged",
+        "destroyed"
+      ]
+    },
+    {
+      "slug": "blue_core",
+      "name": "Blue Core",
+      "category": "core",
+      "sheet": "outputs/moba_interaction_pack/sprites/core/blue_core/blue_core_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/core/blue_core/blue_core_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "charge",
+        "fire",
+        "damaged",
+        "destroyed"
+      ]
+    },
+    {
+      "slug": "red_core",
+      "name": "Red Core",
+      "category": "core",
+      "sheet": "outputs/moba_interaction_pack/sprites/core/red_core/red_core_sprite_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/core/red_core/red_core_actions.json",
+      "frame_size_px": [
+        256,
+        256
+      ],
+      "states": [
+        "idle",
+        "charge",
+        "fire",
+        "damaged",
+        "destroyed"
+      ]
+    },
+    {
+      "slug": "map_props",
+      "category": "map_prop",
+      "sheet": "outputs/moba_interaction_pack/sprites/map_props/map_props_sheet.png",
+      "metadata": "outputs/moba_interaction_pack/sprites/map_props/map_props.json"
+    }
+  ],
+  "validation": {
+    "outputs/moba_interaction_pack/sprites/heroes/ember_vanguard/ember_vanguard_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/heroes/frost_ranger/frost_ranger_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/heroes/storm_oracle/storm_oracle_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/heroes/iron_sentinel/iron_sentinel_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/heroes/night_veil/night_veil_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/minions/blue_melee_minion/blue_melee_minion_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/minions/blue_ranged_minion/blue_ranged_minion_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/minions/blue_siege_minion/blue_siege_minion_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/minions/red_melee_minion/red_melee_minion_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/minions/red_ranged_minion/red_ranged_minion_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/minions/red_siege_minion/red_siege_minion_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/monsters/stone_golem/stone_golem_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/monsters/bramble_spirit/bramble_spirit_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/monsters/river_drake/river_drake_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/tower/blue_tower/blue_tower_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/tower/red_tower/red_tower_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/core/blue_core/blue_core_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/core/red_core/red_core_sprite_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1280
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/sprites/map_props/map_props_sheet.png": {
+      "mode": "RGBA",
+      "size": [
+        1536,
+        256
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/map/interactive_map_zones_preview.png": {
+      "mode": "RGBA",
+      "size": [
+        1400,
+        1400
+      ],
+      "nonempty": true,
+      "has_alpha": true
+    },
+    "outputs/moba_interaction_pack/preview/moba_interaction_pack_overview.png": {
+      "mode": "RGB",
+      "size": [
+        2400,
+        1500
+      ],
+      "nonempty": true,
+      "has_alpha": false
+    }
+  }
+}

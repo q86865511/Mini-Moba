@@ -1,0 +1,7707 @@
+{
+  "source_map": "outputs/moba_asset_pack/map/moba_three_lane_map.png",
+  "tile_size_px": 128,
+  "columns": 16,
+  "rows": 16,
+  "map_size_px": {
+    "width": 2048,
+    "height": 2048
+  },
+  "tile_count": 256,
+  "tile_directory": "outputs/moba_asset_pack/map_tiles/tiles_128",
+  "atlas": "outputs/moba_asset_pack/map_tiles/moba_map_tiles_128_atlas.png",
+  "padded_atlas": {
+    "path": "outputs/moba_asset_pack/map_tiles/moba_map_tiles_128_atlas_padded_2px.png",
+    "padding_px": 2,
+    "stride_px": 132,
+    "size_px": {
+      "width": 2112,
+      "height": 2112
+    }
+  },
+  "grid_preview": "outputs/moba_asset_pack/map_tiles/moba_map_tiles_128_grid_preview.png",
+  "stitched_check": "outputs/moba_asset_pack/map_tiles/moba_map_tiles_128_stitched_check.png",
+  "exact_rebuild": true,
+  "tiles": [
+    {
+      "id": 0,
+      "row": 0,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 1,
+      "row": 0,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 2,
+      "row": 0,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 3,
+      "row": 0,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 4,
+      "row": 0,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 5,
+      "row": 0,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 6,
+      "row": 0,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 7,
+      "row": 0,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 8,
+      "row": 0,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 9,
+      "row": 0,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 10,
+      "row": 0,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 11,
+      "row": 0,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 12,
+      "row": 0,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 13,
+      "row": 0,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 14,
+      "row": 0,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 15,
+      "row": 0,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r00_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 2,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 0,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 16,
+      "row": 1,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 17,
+      "row": 1,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 18,
+      "row": 1,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 19,
+      "row": 1,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 20,
+      "row": 1,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 21,
+      "row": 1,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 22,
+      "row": 1,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 23,
+      "row": 1,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 24,
+      "row": 1,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 25,
+      "row": 1,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 26,
+      "row": 1,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 27,
+      "row": 1,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 28,
+      "row": 1,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 29,
+      "row": 1,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 30,
+      "row": 1,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 31,
+      "row": 1,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r01_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 134,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 132,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 32,
+      "row": 2,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 33,
+      "row": 2,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 34,
+      "row": 2,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 35,
+      "row": 2,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 36,
+      "row": 2,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 37,
+      "row": 2,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 38,
+      "row": 2,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 39,
+      "row": 2,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 40,
+      "row": 2,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 41,
+      "row": 2,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 42,
+      "row": 2,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 43,
+      "row": 2,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 44,
+      "row": 2,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 45,
+      "row": 2,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 46,
+      "row": 2,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 47,
+      "row": 2,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r02_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 266,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 264,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 48,
+      "row": 3,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 49,
+      "row": 3,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 50,
+      "row": 3,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 51,
+      "row": 3,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 52,
+      "row": 3,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 53,
+      "row": 3,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 54,
+      "row": 3,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 55,
+      "row": 3,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 56,
+      "row": 3,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 57,
+      "row": 3,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 58,
+      "row": 3,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 59,
+      "row": 3,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 60,
+      "row": 3,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 61,
+      "row": 3,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 62,
+      "row": 3,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 63,
+      "row": 3,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r03_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 398,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 396,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 64,
+      "row": 4,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 65,
+      "row": 4,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 66,
+      "row": 4,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 67,
+      "row": 4,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 68,
+      "row": 4,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 69,
+      "row": 4,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 70,
+      "row": 4,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 71,
+      "row": 4,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 72,
+      "row": 4,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 73,
+      "row": 4,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 74,
+      "row": 4,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 75,
+      "row": 4,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 76,
+      "row": 4,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 77,
+      "row": 4,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 78,
+      "row": 4,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 79,
+      "row": 4,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r04_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 530,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 528,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 80,
+      "row": 5,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 81,
+      "row": 5,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 82,
+      "row": 5,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 83,
+      "row": 5,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 84,
+      "row": 5,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 85,
+      "row": 5,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 86,
+      "row": 5,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 87,
+      "row": 5,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 88,
+      "row": 5,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 89,
+      "row": 5,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 90,
+      "row": 5,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 91,
+      "row": 5,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 92,
+      "row": 5,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 93,
+      "row": 5,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 94,
+      "row": 5,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 95,
+      "row": 5,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r05_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 662,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 660,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 96,
+      "row": 6,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 97,
+      "row": 6,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 98,
+      "row": 6,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 99,
+      "row": 6,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 100,
+      "row": 6,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 101,
+      "row": 6,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 102,
+      "row": 6,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 103,
+      "row": 6,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 104,
+      "row": 6,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 105,
+      "row": 6,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 106,
+      "row": 6,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 107,
+      "row": 6,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 108,
+      "row": 6,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 109,
+      "row": 6,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 110,
+      "row": 6,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 111,
+      "row": 6,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r06_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 768,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 794,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 792,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 112,
+      "row": 7,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 113,
+      "row": 7,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 114,
+      "row": 7,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 115,
+      "row": 7,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 116,
+      "row": 7,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 117,
+      "row": 7,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 118,
+      "row": 7,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 119,
+      "row": 7,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 120,
+      "row": 7,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 121,
+      "row": 7,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 122,
+      "row": 7,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 123,
+      "row": 7,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 124,
+      "row": 7,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 125,
+      "row": 7,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 126,
+      "row": 7,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 127,
+      "row": 7,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r07_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 896,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 926,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 924,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 128,
+      "row": 8,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 129,
+      "row": 8,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 130,
+      "row": 8,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 131,
+      "row": 8,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 132,
+      "row": 8,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 133,
+      "row": 8,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 134,
+      "row": 8,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 135,
+      "row": 8,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 136,
+      "row": 8,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 137,
+      "row": 8,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 138,
+      "row": 8,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 139,
+      "row": 8,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 140,
+      "row": 8,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 141,
+      "row": 8,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 142,
+      "row": 8,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 143,
+      "row": 8,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r08_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 1024,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 1058,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 1056,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 144,
+      "row": 9,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 145,
+      "row": 9,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 146,
+      "row": 9,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 147,
+      "row": 9,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 148,
+      "row": 9,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 149,
+      "row": 9,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 150,
+      "row": 9,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 151,
+      "row": 9,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 152,
+      "row": 9,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 153,
+      "row": 9,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 154,
+      "row": 9,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 155,
+      "row": 9,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 156,
+      "row": 9,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 157,
+      "row": 9,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 158,
+      "row": 9,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 159,
+      "row": 9,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r09_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 1152,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 1190,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 1188,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 160,
+      "row": 10,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 161,
+      "row": 10,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 162,
+      "row": 10,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 163,
+      "row": 10,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 164,
+      "row": 10,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 165,
+      "row": 10,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 166,
+      "row": 10,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 167,
+      "row": 10,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 168,
+      "row": 10,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 169,
+      "row": 10,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 170,
+      "row": 10,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 171,
+      "row": 10,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 172,
+      "row": 10,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 173,
+      "row": 10,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 174,
+      "row": 10,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 175,
+      "row": 10,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r10_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 1280,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 1322,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 1320,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 176,
+      "row": 11,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 177,
+      "row": 11,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 178,
+      "row": 11,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 179,
+      "row": 11,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 180,
+      "row": 11,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 181,
+      "row": 11,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 182,
+      "row": 11,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 183,
+      "row": 11,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 184,
+      "row": 11,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 185,
+      "row": 11,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 186,
+      "row": 11,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 187,
+      "row": 11,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 188,
+      "row": 11,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 189,
+      "row": 11,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 190,
+      "row": 11,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 191,
+      "row": 11,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r11_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 1408,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 1454,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 1452,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 192,
+      "row": 12,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 193,
+      "row": 12,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 194,
+      "row": 12,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 195,
+      "row": 12,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 196,
+      "row": 12,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 197,
+      "row": 12,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 198,
+      "row": 12,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 199,
+      "row": 12,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 200,
+      "row": 12,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 201,
+      "row": 12,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 202,
+      "row": 12,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 203,
+      "row": 12,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 204,
+      "row": 12,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 205,
+      "row": 12,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 206,
+      "row": 12,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 207,
+      "row": 12,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r12_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 1536,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 1586,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 1584,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 208,
+      "row": 13,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 209,
+      "row": 13,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 210,
+      "row": 13,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 211,
+      "row": 13,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 212,
+      "row": 13,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 213,
+      "row": 13,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 214,
+      "row": 13,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 215,
+      "row": 13,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 216,
+      "row": 13,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 217,
+      "row": 13,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 218,
+      "row": 13,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 219,
+      "row": 13,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 220,
+      "row": 13,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 221,
+      "row": 13,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 222,
+      "row": 13,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 223,
+      "row": 13,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r13_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 1664,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 1718,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 1716,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 224,
+      "row": 14,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 225,
+      "row": 14,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 226,
+      "row": 14,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 227,
+      "row": 14,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 228,
+      "row": 14,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 229,
+      "row": 14,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 230,
+      "row": 14,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 231,
+      "row": 14,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 232,
+      "row": 14,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 233,
+      "row": 14,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 234,
+      "row": 14,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 235,
+      "row": 14,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 236,
+      "row": 14,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 237,
+      "row": 14,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 238,
+      "row": 14,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 239,
+      "row": 14,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r14_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 1792,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 1850,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 1848,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 240,
+      "row": 15,
+      "col": 0,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c00.png",
+      "place_px": {
+        "x": 0,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 0,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 2,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 0,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 241,
+      "row": 15,
+      "col": 1,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c01.png",
+      "place_px": {
+        "x": 128,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 128,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 134,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 132,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 242,
+      "row": 15,
+      "col": 2,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c02.png",
+      "place_px": {
+        "x": 256,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 256,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 266,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 264,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 243,
+      "row": 15,
+      "col": 3,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c03.png",
+      "place_px": {
+        "x": 384,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 384,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 398,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 396,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 244,
+      "row": 15,
+      "col": 4,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c04.png",
+      "place_px": {
+        "x": 512,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 512,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 530,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 528,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 245,
+      "row": 15,
+      "col": 5,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c05.png",
+      "place_px": {
+        "x": 640,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 640,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 662,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 660,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 246,
+      "row": 15,
+      "col": 6,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c06.png",
+      "place_px": {
+        "x": 768,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 768,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 794,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 792,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 247,
+      "row": 15,
+      "col": 7,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c07.png",
+      "place_px": {
+        "x": 896,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 896,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 926,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 924,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 248,
+      "row": 15,
+      "col": 8,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c08.png",
+      "place_px": {
+        "x": 1024,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1024,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1058,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1056,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 249,
+      "row": 15,
+      "col": 9,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c09.png",
+      "place_px": {
+        "x": 1152,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1152,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1190,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1188,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 250,
+      "row": 15,
+      "col": 10,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c10.png",
+      "place_px": {
+        "x": 1280,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1280,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1322,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1320,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 251,
+      "row": 15,
+      "col": 11,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c11.png",
+      "place_px": {
+        "x": 1408,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1408,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1454,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1452,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 252,
+      "row": 15,
+      "col": 12,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c12.png",
+      "place_px": {
+        "x": 1536,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1536,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1586,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1584,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 253,
+      "row": 15,
+      "col": 13,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c13.png",
+      "place_px": {
+        "x": 1664,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1664,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1718,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1716,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 254,
+      "row": 15,
+      "col": 14,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c14.png",
+      "place_px": {
+        "x": 1792,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1792,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1850,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1848,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    },
+    {
+      "id": 255,
+      "row": 15,
+      "col": 15,
+      "image": "outputs/moba_asset_pack/map_tiles/tiles_128/tile_r15_c15.png",
+      "place_px": {
+        "x": 1920,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "atlas_px": {
+        "x": 1920,
+        "y": 1920,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_inner_px": {
+        "x": 1982,
+        "y": 1982,
+        "width": 128,
+        "height": 128
+      },
+      "padded_atlas_outer_px": {
+        "x": 1980,
+        "y": 1980,
+        "width": 132,
+        "height": 132
+      }
+    }
+  ]
+}

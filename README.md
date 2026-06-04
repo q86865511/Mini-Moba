@@ -14,7 +14,7 @@
 |---|---|
 | 語言 | C++17 |
 | 繪圖 / 視窗 / 輸入 / 音效 | [raylib](https://www.raylib.com/) 5.5（CMake FetchContent，靜態連結） |
-| 美術 / 音效 | 程序生成為主（程式碼畫）＋ 免費 CC0（Kenney / itch.io）＋ 選配本機 AI 生圖 |
+| 美術 / 音效 | 原創生成素材包（`moba_asset_pack` 地圖/英雄、`moba_interaction_pack` 動畫 sprite）＋ 程序合成音效 |
 | 資料 | JSON（nlohmann/json） |
 | 腳本層（中後期） | Lua + [sol2](https://github.com/ThePhD/sol2) |
 | 網路（最後階段） | [ENet](http://enet.bespin.org/)（為遊戲設計的可靠 UDP） |
@@ -40,7 +40,9 @@
 │  ├─ include/shared/       Vec2.h, Team.h, Entity.h, World.h, entities/Hero.h
 │  └─ src/                  World.cpp, entities/Hero.cpp
 ├─ client/                  客戶端（raylib）：模組化
-│  └─ src/                  main.cpp, Game, AssetManager, Renderer, GameCamera, Input, Audio
+│  └─ src/                  main.cpp, Game, AssetManager, AnimatedSprite,
+│                           Renderer, GameCamera, Input, Audio
+├─ assets/                  原創素材包（moba_asset_pack / moba_interaction_pack）+ CREDITS
 ├─ CMakeLists.txt           頂層建置（FetchContent 取得 raylib 5.5）
 ├─ CMakePresets.json        建置設定檔（vcpkg 工具鏈）
 ├─ vcpkg.json               相依套件清單

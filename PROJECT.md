@@ -19,7 +19,7 @@
 
 - **語言**：C++（C++17）
 - **繪圖 / 視窗 / 輸入 / 音效**：Raylib **5.5**（CMake FetchContent 靜態連結；vcpkg 的 6.0 在此機器 `EndDrawing` 失效＝白畫面，故固定 5.5）
-- **美術 / 音效**：**程序生成為主**（程式碼畫出形狀/漸層/貼圖，＝「Claude 生成」的做法）＋ 免費素材（Kenney / itch.io / OpenGameArt，挑可再散布授權）＋ 選配本機 AI 生圖（RTX 4070 跑 SD）。詳見 plan。
+- **美術 / 音效**：使用**本機生成的原創 MOBA 素材包**（`assets/moba_asset_pack`：2048² 三線地圖 + 英雄；`assets/moba_interaction_pack`：動畫 sprite sheet，含英雄/小兵/野怪/塔/主堡，附 `_actions.json` 影格與碰撞資料）；音效程序合成。日後可再用程序生成特效或本機 AI 升級。
 - **資料**：JSON（`nlohmann/json`）放英雄 / 技能 / 道具 / 地圖數值
 - **腳本層**：Lua + sol2（中後期才導入，學習目標，貼近 LoL 內容層）
 - **網路**：ENet（為遊戲設計的可靠 UDP）— **最後一階段才做**
@@ -128,7 +128,8 @@
 - 2026-06-04：完成階段 0。建立 CMake 專案骨架，client 用 raylib 開出視窗（方塊跟隨滑鼠）。踩到 raylib 6.0 在本機 `EndDrawing` 失效（白畫面＋無回應＋40 萬 FPS 空轉），改用 FetchContent 固定 raylib 5.5 後正常。
 - 2026-06-04：完成階段 1。建立 `shared` 純模擬庫（`Vec2` / `Hero` / `World::Tick`，零 raylib／零網路）；client 固定時間步長、右鍵移動、格線地圖。期間關閉 Smart App Control 解決 exe 被擋。
 - 2026-06-04：**改方向為「單機優先」**——先做出能玩的單機 MOBA 再連線，並織入美術/音效、要求 OO + 模組化。重排 roadmap（階段 2 起為單機內容，多人連線移到階段 8）。現有 `shared`/`client` 架構正好支援，不需重來。
-- 2026-06-04：完成階段 2。`shared` 重構為 OO（`Entity` 基底 + `Hero`，`World` 持有 `vector<unique_ptr<Entity>>`）；client 拆成 `Game`/`AssetManager`/`Renderer`/`GameCamera`/`Input`/`Audio` 模組；**程序生成**英雄與草地貼圖、移動音效與環境背景音樂（全程式碼生成、無外部檔案）；Camera2D 跟隨英雄、地圖 2560×1440、右鍵移動。建置/執行驗證 `Responding=True`、貼圖與音訊裝置載入正常。
+- 2026-06-04：完成階段 2。`shared` 重構為 OO（`Entity` 基底 + `Hero`，`World` 持有 `vector<unique_ptr<Entity>>`）；client 拆成 `Game`/`AssetManager`/`Renderer`/`GameCamera`/`Input`/`Audio` 模組；程序生成英雄與草地貼圖、移動音效與環境背景音樂；Camera2D 跟隨英雄、右鍵移動。
+- 2026-06-04：改用使用者自製的**原創素材包**（移除先前 Kenney 試用素材與下載）。接入 `moba_asset_pack` 三線地圖當世界背景（2048²）、`moba_interaction_pack` 的 `ember_vanguard` 動畫英雄（idle/move）；新增 `AnimatedSprite` 模組（sprite sheet 動畫）、`AssetManager` 改載入新包、CMake 增量複製 `assets/`。英雄起點在藍方基地。截圖驗證地圖與英雄渲染正常。
 
 ---
 

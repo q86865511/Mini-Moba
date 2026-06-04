@@ -1,0 +1,81 @@
+{
+  "asset_pack": "moba_asset_pack",
+  "generated": "2026-06-04",
+  "license_note": "Original generic assets generated for this workspace; no third-party game IP referenced.",
+  "map": {
+    "path": "outputs/moba_asset_pack/map/moba_three_lane_map.png",
+    "size_px": [
+      2048,
+      2048
+    ]
+  },
+  "heroes": [
+    {
+      "slug": "ember_vanguard",
+      "name": "Ember Vanguard",
+      "role": "fighter",
+      "description": "frontline sword-and-shield fighter with flame trails",
+      "path": "outputs/moba_asset_pack/heroes/ember_vanguard.png",
+      "size_px": [
+        1024,
+        1024
+      ],
+      "transparent_background": true
+    },
+    {
+      "slug": "frost_ranger",
+      "name": "Frost Ranger",
+      "role": "marksman",
+      "description": "hooded bow user with ice arrow effects",
+      "path": "outputs/moba_asset_pack/heroes/frost_ranger.png",
+      "size_px": [
+        1024,
+        1024
+      ],
+      "transparent_background": true
+    },
+    {
+      "slug": "storm_oracle",
+      "name": "Storm Oracle",
+      "role": "mage",
+      "description": "arcane staff mage with storm energy",
+      "path": "outputs/moba_asset_pack/heroes/storm_oracle.png",
+      "size_px": [
+        1024,
+        1024
+      ],
+      "transparent_background": true
+    },
+    {
+      "slug": "iron_sentinel",
+      "name": "Iron Sentinel",
+      "role": "tank_support",
+      "description": "heavy armored guardian with hammer and tower shield",
+      "path": "outputs/moba_asset_pack/heroes/iron_sentinel.png",
+      "size_px": [
+        1024,
+        1024
+      ],
+      "transparent_background": true
+    },
+    {
+      "slug": "night_veil",
+      "name": "Night Veil",
+      "role": "assassin",
+      "description": "swift dual-dagger assassin with teal shadow smoke",
+      "path": "outputs/moba_asset_pack/heroes/night_veil.png",
+      "size_px": [
+        1024,
+        1024
+      ],
+      "transparent_background": true
+    }
+  ],
+  "preview": "outputs/moba_asset_pack/preview/moba_asset_pack_preview.png",
+  "prompts": {
+    "mode": "local procedural raster generation with Pillow; built-in image_gen tool was unavailable in this session",
+    "shared_style": "original stylized top-down MOBA game assets, readable silhouettes, polished painterly/vector-like shapes, no logos, no watermark",
+    "map_prompt": "Generic original three-lane MOBA battlefield map, top-down view, diagonal symmetry, blue base bottom-left and red base top-right, three readable lanes, river, jungle paths, neutral objective pits, camps, towers, grass, rocks, and brush; no text, no copyrighted layout.",
+    "hero_prompt": "Five original transparent-background MOBA hero assets in a cohesive top-down/semi-chibi game style, each with readable weapon silhouette, role identity, elemental VFX, no text, no logos, no watermark."
+  }
+}

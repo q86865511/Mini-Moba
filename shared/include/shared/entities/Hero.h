@@ -8,7 +8,8 @@ class Hero : public Entity {
 public:
     Vec2  moveTarget{};
     bool  hasTarget = false;
-    float moveSpeed = 300.0f; // sim units per second
+    float moveSpeed = 300.0f;       // sim units per second
+    Vec2  facing{ 1.0f, 0.0f };     // unit vector the hero is facing (for rendering/abilities)
 
     Hero();
 

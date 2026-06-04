@@ -1,0 +1,365 @@
+{
+  "source_map": "outputs/moba_asset_pack/map/moba_three_lane_map.png",
+  "map_size_px": {
+    "w": 2048,
+    "h": 2048
+  },
+  "coordinate_system": "pixel, origin top-left",
+  "lanes": [
+    {
+      "id": "top",
+      "width_px": 116,
+      "path": [
+        [
+          238,
+          1814
+        ],
+        [
+          248,
+          1260
+        ],
+        [
+          248,
+          745
+        ],
+        [
+          580,
+          360
+        ],
+        [
+          1260,
+          265
+        ],
+        [
+          1808,
+          238
+        ]
+      ]
+    },
+    {
+      "id": "mid",
+      "width_px": 124,
+      "path": [
+        [
+          238,
+          1814
+        ],
+        [
+          620,
+          1422
+        ],
+        [
+          1030,
+          1030
+        ],
+        [
+          1430,
+          625
+        ],
+        [
+          1808,
+          238
+        ]
+      ]
+    },
+    {
+      "id": "bottom",
+      "width_px": 116,
+      "path": [
+        [
+          238,
+          1814
+        ],
+        [
+          725,
+          1804
+        ],
+        [
+          1325,
+          1782
+        ],
+        [
+          1710,
+          1396
+        ],
+        [
+          1808,
+          238
+        ]
+      ]
+    }
+  ],
+  "bases": [
+    {
+      "team": "blue",
+      "core_px": [
+        235,
+        1815
+      ],
+      "spawn_px": [
+        315,
+        1695
+      ],
+      "radius_px": 178
+    },
+    {
+      "team": "red",
+      "core_px": [
+        1813,
+        235
+      ],
+      "spawn_px": [
+        1692,
+        340
+      ],
+      "radius_px": 178
+    }
+  ],
+  "towers": [
+    {
+      "team": "blue",
+      "id": "blue_top_outer",
+      "pos_px": [
+        266,
+        1350
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "blue",
+      "id": "blue_top_inner",
+      "pos_px": [
+        330,
+        776
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "blue",
+      "id": "blue_mid_outer",
+      "pos_px": [
+        620,
+        1428
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "blue",
+      "id": "blue_mid_inner",
+      "pos_px": [
+        1000,
+        1050
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "blue",
+      "id": "blue_bot_outer",
+      "pos_px": [
+        742,
+        1800
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "blue",
+      "id": "blue_bot_inner",
+      "pos_px": [
+        1300,
+        1760
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "red",
+      "id": "red_top_outer",
+      "pos_px": [
+        1290,
+        266
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "red",
+      "id": "red_top_inner",
+      "pos_px": [
+        1778,
+        698
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "red",
+      "id": "red_mid_outer",
+      "pos_px": [
+        1420,
+        622
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "red",
+      "id": "red_mid_inner",
+      "pos_px": [
+        1050,
+        1000
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "red",
+      "id": "red_bot_outer",
+      "pos_px": [
+        1760,
+        740
+      ],
+      "range_px": 310
+    },
+    {
+      "team": "red",
+      "id": "red_bot_inner",
+      "pos_px": [
+        1288,
+        1714
+      ],
+      "range_px": 310
+    }
+  ],
+  "jungle_camps": [
+    {
+      "id": "blue_golem",
+      "pos_px": [
+        545,
+        1072
+      ],
+      "monster": "stone_golem",
+      "respawn_s": 90
+    },
+    {
+      "id": "blue_bramble",
+      "pos_px": [
+        682,
+        1394
+      ],
+      "monster": "bramble_spirit",
+      "respawn_s": 75
+    },
+    {
+      "id": "blue_river",
+      "pos_px": [
+        832,
+        1035
+      ],
+      "monster": "river_drake",
+      "respawn_s": 300
+    },
+    {
+      "id": "red_golem",
+      "pos_px": [
+        1515,
+        920
+      ],
+      "monster": "stone_golem",
+      "respawn_s": 90
+    },
+    {
+      "id": "red_bramble",
+      "pos_px": [
+        1330,
+        666
+      ],
+      "monster": "bramble_spirit",
+      "respawn_s": 75
+    },
+    {
+      "id": "red_river",
+      "pos_px": [
+        1210,
+        1010
+      ],
+      "monster": "river_drake",
+      "respawn_s": 300
+    }
+  ],
+  "brush_zones": [
+    {
+      "id": "blue_top_brush",
+      "shape": "ellipse",
+      "center_px": [
+        355,
+        1255
+      ],
+      "radius_px": [
+        105,
+        70
+      ]
+    },
+    {
+      "id": "blue_mid_brush",
+      "shape": "ellipse",
+      "center_px": [
+        700,
+        1215
+      ],
+      "radius_px": [
+        110,
+        72
+      ]
+    },
+    {
+      "id": "river_left_brush",
+      "shape": "ellipse",
+      "center_px": [
+        895,
+        735
+      ],
+      "radius_px": [
+        115,
+        76
+      ]
+    },
+    {
+      "id": "river_right_brush",
+      "shape": "ellipse",
+      "center_px": [
+        1185,
+        1255
+      ],
+      "radius_px": [
+        115,
+        76
+      ]
+    },
+    {
+      "id": "red_mid_brush",
+      "shape": "ellipse",
+      "center_px": [
+        1325,
+        735
+      ],
+      "radius_px": [
+        108,
+        72
+      ]
+    },
+    {
+      "id": "red_bot_brush",
+      "shape": "ellipse",
+      "center_px": [
+        1580,
+        1220
+      ],
+      "radius_px": [
+        106,
+        72
+      ]
+    }
+  ],
+  "interaction_rules": {
+    "brush": "enter hides unit from enemies without allied vision inside zone",
+    "tower": "targets enemy units in range; prioritizes attackers of allied heroes",
+    "jungle_camp": "spawns neutral monster group after respawn_s",
+    "core": "destroying enemy core ends match"
+  },
+  "preview": "outputs/moba_interaction_pack/map/interactive_map_zones_preview.png"
+}

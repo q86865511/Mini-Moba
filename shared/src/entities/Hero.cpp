@@ -19,13 +19,14 @@ void Hero::Update(World& /*world*/, float dt) {
 
     const Vec2 toTarget = moveTarget - pos;
     const float dist = Length(toTarget);
-    const float step = moveSpeed * dt;
+    if (dist > 0.0001f) facing = Normalized(toTarget); // face the way we walk
 
+    const float step = moveSpeed * dt;
     if (dist <= step) {
         pos = moveTarget; // arrive exactly, then stop
         hasTarget = false;
     } else {
-        pos = pos + Normalized(toTarget) * step;
+        pos = pos + facing * step;
     }
 }
 

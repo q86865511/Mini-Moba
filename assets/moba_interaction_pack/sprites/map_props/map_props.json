@@ -1,0 +1,81 @@
+{
+  "sheet": "outputs/moba_interaction_pack/sprites/map_props/map_props_sheet.png",
+  "frame_size_px": {
+    "w": 256,
+    "h": 256
+  },
+  "props": [
+    {
+      "slug": "brush_patch",
+      "name": "Brush Patch",
+      "role": "hide_zone",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      },
+      "interaction": "stealth brush visual"
+    },
+    {
+      "slug": "camp_marker",
+      "name": "Camp Marker",
+      "role": "spawn_zone",
+      "rect": {
+        "x": 256,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      },
+      "interaction": "jungle camp marker"
+    },
+    {
+      "slug": "river_rune",
+      "name": "River Rune",
+      "role": "objective_buff",
+      "rect": {
+        "x": 512,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      },
+      "interaction": "river buff marker"
+    },
+    {
+      "slug": "lane_waypoint",
+      "name": "Lane Waypoint",
+      "role": "path_marker",
+      "rect": {
+        "x": 768,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      },
+      "interaction": "lane waypoint decal"
+    },
+    {
+      "slug": "vision_ward",
+      "name": "Vision Ward",
+      "role": "vision",
+      "rect": {
+        "x": 1024,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      },
+      "interaction": "vision ward marker"
+    },
+    {
+      "slug": "healing_orb",
+      "name": "Healing Orb",
+      "role": "pickup",
+      "rect": {
+        "x": 1280,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      },
+      "interaction": "healing pickup"
+    }
+  ]
+}
